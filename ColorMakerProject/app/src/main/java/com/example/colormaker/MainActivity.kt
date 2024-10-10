@@ -106,6 +106,10 @@ class MainActivity : AppCompatActivity() {
     // Function updates the color of the viewColor square
     private fun updateColor() {
 
+        var redValue = 0
+        var greenValue = 0
+        var blueValue = 0
+
         // Check switch states and update the view color accordingly
         // Note: Need to convert form 0-100 format used by seekBar.progress,
         // to an rgb compatible format.
