@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Red Switch (with label) -->
+
+    <!-- Red SeekBar -->
+
+    <!-- Red Input Field -->
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarGreen"
+        app:layout_constraintEnd_toStartOf="@id/inputRed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/switchRed" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchRed"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/textRed"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarRed" />
+
+    <!-- Green Switch (with label) -->
+
+    <!-- Green SeekBar -->
+
+    <!-- Green Input Field -->
+
+    <EditText
+        android:id="@+id/inputRed"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="724dp"
+        android:autofillHints=""
+        android:hint="@string/hintValueRed"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBarRed" />
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarBlue"
+        app:layout_constraintEnd_toStartOf="@+id/inputGreen"
+        app:layout_constraintStart_toEndOf="@+id/switchGreen" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchGreen"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/textGreen"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBarGreen" />
+
+    <EditText
+        android:id="@+id/inputGreen"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="724dp"
+        android:autofillHints=""
+        android:hint="@string/hintValueGreen"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBarGreen" />
+
+    <!-- Blue Switch (with label) -->
+
+    <!-- Blue SeekBar -->
+
+    <!-- Blue Input Field -->
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="400dp"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inputBlue"
+        app:layout_constraintStart_toEndOf="@+id/switchBlue" />
+
+    <EditText
+        android:id="@+id/inputBlue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="724dp"
+        android:autofillHints=""
+        android:hint="@string/hintValueBlue"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBarBlue" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchBlue"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/textBlue"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBarBlue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Color Maker</string>
+    <string name="textRed">R</string>
+    <string name="textGreen">G</string>
+    <string name="textBlue">B</string>
+    <string name="hintValueBlue">0.5</string>
+    <string name="hintValueGreen">0.5</string>
+    <string name="hintValueRed">0.5</string>
+
+    <string name="defaultRedValue">0.50</string>
+    <string name="defaultGreenValue">0.50</string>
+    <string name="defaultBlueValue">0.50</string>
+</resources>
